@@ -1,11 +1,12 @@
 # Análise de base de ecomm para modelos de previsão de churn
-[PT] A base de dados é originaria do [Kaggle](https://www.kaggle.com/datasets/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction), disponibilizada para estudos relacionas as modelos preditivos, focando na previsão de usuários que se tornaram churners ou não, e o que pode leva-los a serem churners.
-
-**O que é o churn?**
-Ato de um cliente deixar de consumir produtos e serviçõs empresa por motivos como: insastifação ou encontrar melhor preços no concorrente. Esses clientes são conhecidos como "churners".
+A base de dados é originaria do [Kaggle](https://www.kaggle.com/datasets/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction), disponibilizada para estudos relacionas as modelos preditivos, focando na previsão de usuários que se tornaram churners ou não, e o que pode leva-los a serem churners.
 
 **O que você vai encontrar nessa pasta?**
-Um notebook com uma análise descretiva e tratamentos realizados nos dados, e um arquivo Excel com o resultado final decorrido no notebook.
+Um notebook com uma análise descretiva e tratamentos realizados nos dados, e dois arquivos Excel, sendo o primeiro o arquivo original do Kaggle e o segundo o resultado final do trabalho feito nesse notebook.
+
+**O que é o churn?**
+![Imagem para retratar o churn](image.png)
+Ato de um cliente deixar de consumir produtos e serviçõs empresa por motivos como: insastifação ou encontrar melhor preços no concorrente. Esses clientes são conhecidos como "churners".
 
 **Resumo do Notebook**
 Os seguintes passos foram feitos para chegar no resultado final: 
@@ -32,6 +33,10 @@ Os seguintes passos foram feitos para chegar no resultado final:
     - Parece que a flag se usuários é ou não um churner é baseada está no tempo que ele é usuário do e-commerce. Esse suspeita surgiu no gráfico acima, usuários com menos de 25 meses são possíveis churners e acima de 25 meses não são mais considerados churners.
 - O quão distante fica o armazém dos produtos fica do domicílio dos usuários? O armazém fica no máximo a 20km do domicílio da maior parte dos usuários. **(imagino que a métrica esteja em quilometros)**
 - Quanto tempo é gasto no site/app? A maioria dos usuários passam, aproximadamente, entre 2 a 4 horas.
+
+**Gráficos gerados para as análises**
+![Summário feito com a biblioteca summarytools](image-1.png)
+![Alguns gráficos para analisar visualmente os dados](image-2.png)
 
 **Dicionário explicando cada variável ao final da análise**
 - **CustomerID:** Identificador único dos usuários.
