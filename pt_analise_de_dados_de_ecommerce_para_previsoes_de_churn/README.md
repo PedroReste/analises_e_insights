@@ -9,13 +9,13 @@ Um notebook com uma análise descretiva e tratamentos realizados nos dados, e do
 Ato de um cliente deixar de consumir produtos e serviçõs empresa por motivos como: insastifação ou encontrar melhor preços no concorrente. Esses clientes são conhecidos como "churners".
 
 **Resumo do Notebook**
+
 Os seguintes passos foram feitos para chegar no resultado final: 
 1. Importar as bibliotecas e o dataset.
 2. Otimizar o tipo de cada variável do dataset para reduzir a memória e tempo usado para rodar as células.
 3. Analisar as características descretivas dos dados para compreender melhor os dados existentes na base.
 4. Tratar e ajustar dados com nomenclaturas diferentes que deveriam estar em uma única categoria e agrupar outras informações.
-5. Transformar variáveis categoricas com informações textuais em valores binários.
-    5.1. Para colunas com diversas categorias foi utilizado a função **One Hot Encoder** da biblioteca **Sklearn Processing**.
+5. Transformar variáveis categoricas com informações textuais em valores binários. Para colunas com diversas categorias foi utilizado a função **One Hot Encoder** da biblioteca **Sklearn Processing**.
 6. Preencher os valores vazios existentes em diversas colunas do dataframe com o uso do **KNN Imputer**.
 7. Otimizar novamente os tipos de cada variável novamente e gerar o arquivo final em formato xlsx (excel).
 
