@@ -6,7 +6,7 @@ Um notebook com uma análise descretiva e tratamentos realizados nos dados, e do
 
 **O que é o churn?**
 ![Imagem para retratar o churn](image.png)
-Ato de um cliente deixar de consumir produtos e serviçõs empresa por motivos como: insastifação ou encontrar melhor preços no concorrente. Esses clientes são conhecidos como "churners".
+Ato de um cliente deixar de consumir produtos e serviços de uma empresa por motivos como: insastifação ou encontrar melhor preços no concorrente. Esses clientes são conhecidos como "churners".
 
 **Resumo do Notebook**
 
