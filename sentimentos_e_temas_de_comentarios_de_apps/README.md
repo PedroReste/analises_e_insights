@@ -10,7 +10,7 @@ Além da análise com insights dos sentimentos e emoções dos comentários, foi
 ## **Passo a Passo Aplicado**
 **Extração e Tratamentos de Texto**
 - Extração de uma amostra significativa de comentários por empresa na Play Store
-    - No meu **[Github]('https://github.com/PedroReste/data_eng_insights/tree/main/web_scraping_comentarios_apps)** tem um exemplo de como extrair dados da Play Store e App Store.
+    - No meu **[Github](https://github.com/PedroReste/data_eng_insights/tree/main/web_scraping_comentarios_apps)** tem um exemplo de como extrair dados da Play Store e App Store.
 - Função de tratamento de texto: tradução de emojis, remoção de stopwords, lemmentização e etc
 
 **Análise de Sentimentos e Emoções**
@@ -26,7 +26,7 @@ Além da análise com insights dos sentimentos e emoções dos comentários, foi
 
 ## **Como Funciona os modelos de Sentimento e Emoções?**
 
-Os modelos utilizados para extrair sentimentos e emoções são originados da biblioteca **[Pysentimiento]('https://github.com/pysentimiento/pysentimiento')**. Essa lib é baseada em modelos transformer **BERT** (Bidirectional Encoder Representations from Transformers) da Google que são estruturados em três pontos principais:
+Os modelos utilizados para extrair sentimentos e emoções são originados da biblioteca **[Pysentimiento](https://github.com/pysentimiento/pysentimiento)**. Essa lib é baseada em modelos transformer **BERT** (Bidirectional Encoder Representations from Transformers) da Google que são estruturados em três pontos principais:
 - **Bidirecional**: entende uma palavra com base nas palavras à esquerda e à direita ao mesmo tempo.
 - **Pré-treinado**: treinado em tarefas como preencher palavras e prever se uma frase segue logicamente a outra.
 - **Fine-tunável**: pode ser adaptado a tarefas específicas como análise de sentimento, classificação, etc.
@@ -122,7 +122,7 @@ Na tabela abaixo apresenta um resumo geral dos dados. Na coluna de **Sentimento 
 - Em contra partida, como esses são os apps com mais comentários positivos, acabam sendo também os que tem menos comentários negativos. Além desses, o **Mercado Pago** também possui poucos comentários negativos.
 - Tratando de comentários negativos, observandos os que mais possuem atualmente são **C6**, **Itaú** e **Bradesco**.
 
-![sentimentos_simples_bancos](sentimentos_simples_bancos.png)
+![sentimentos_simples_bancos](graficos/sentimentos_simples_bancos.png)
 
 - Nos sentimentos detalhados, separando os sentimentos positivos e negativos em mais ou menos intensos, alguns comportamentos se mantêm semelhantes e outros têm destaques.
 - O **Banco do Brasil** que mais possuí comentários positivos (aprox. 3.6 mil), separando por intensidade, o banco tem principalmente comentários **muito positivos** (aprox. 2.2 mil), e **positivos** (aprox. 1.4 mil) logo em seguida.
@@ -130,13 +130,13 @@ Na tabela abaixo apresenta um resumo geral dos dados. Na coluna de **Sentimento 
 - Nos comentários negativos, **C6**, **Itaú** e **Bradesco** lideravam nos sentimentos gerais. Na visão detalhada, os sentimentos **muito negativos** são os predominantes para essas empresas.
 - Observando os sentimentos negativos, quando existem, a tendência é serem **muito negativos**, tendo poucos sentimentos com menor intensidade.
 
-![sentimentos_detalhados_bancos](sentimentos_detalhados_bancos.png)
+![sentimentos_detalhados_bancos](graficos/sentimentos_detalhados_bancos.png)
 
 **Emoções**
 - Considerando a média da probabilidade de cada emoção, para todas as empresas, o que predomina são emoções **alegres** e **neutras**.
 - Como notado nos sentimentos, acaba tendo a exceção nas emoções para **C6**, **Itaú** e **Bradesco**, que possuem picos de **raiva** nos comentários.
 
-![emocoes_bancos](emocoes_bancos.png)
+![emocoes_bancos](graficos/emocoes_bancos.png)
 
 **Temas**
 - Foram classificados os seguintes temas para ser observados o sentimento médio: App, Desempenho (do App), Login, Atendimento, Segurança, Cartões, Extrato, PIX e Pagamentos.
@@ -148,13 +148,13 @@ Na tabela abaixo apresenta um resumo geral dos dados. Na coluna de **Sentimento 
 
 **App com Temas com Sentimento Positivo**
 
-![alt text](temas_mais_falados_nubank.png)
+![alt text](graficos/temas_mais_falados_nubank.png)
 
 **App com Temas com Sentimento Neutro**
 
-![alt text](temas_mais_falados_bb.png)
-![alt text](temas_mais_falados_mp.png)
+![alt text](graficos/temas_mais_falados_bb.png)
+![alt text](graficos/temas_mais_falados_mp.png)
 
 **App com Temas com Sentimento Negativo**
 
-![temas_mais_falados_c6](temas_mais_falados_c6.png)
+![temas_mais_falados_c6](graficos/temas_mais_falados_c6.png)
