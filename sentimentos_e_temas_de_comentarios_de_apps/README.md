@@ -37,90 +37,13 @@ No caso específico do Pysentimiento, é utilizado modelos BERT adptados que for
 
 Na tabela abaixo apresenta um resumo geral dos dados. Na coluna de **Sentimento Médio**, resume o valor geral dos sentimentos dos comentários de cada app em uma escala de -1 e +1, de muito negativos até muito positivos, respectivamente.
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Aplicativo</th>
-      <th>Sentimento Médio</th>
-      <th>Volume de Comentários</th>
-      <th>Data Mais Antiga</th>
-      <th>Data Mais Recente</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Banco do Brasil</td>
-      <td>0.45</td>
-      <td>5.000</td>
-      <td>26/mai</td>
-      <td>12/jun</td>
-    </tr>
-    <tr>
-      <td>Bradesco</td>
-      <td>-0.04</td>
-      <td>5.000</td>
-      <td>23/abr</td>
-      <td>12/jun</td>
-    </tr>
-    <tr>
-      <td>C6</td>
-      <td>-0.19</td>
-      <td>5.000</td>
-      <td>09/jan</td>
-      <td>12/jun</td>
-    </tr>
-    <tr>
-      <td>Caixa</td>
-      <td>0.09</td>
-      <td>5.000</td>
-      <td>29/mai</td>
-      <td>12/jun</td>
-    </tr>
-    <tr>
-      <td>Inter</td>
-      <td>0.33</td>
-      <td>5.000</td>
-      <td>09/mai</td>
-      <td>12/jun</td>
-    </tr>
-    <tr>
-      <td>Itaú</td>
-      <td>-0.07</td>
-      <td>5.000</td>
-      <td>23/mai</td>
-      <td>12/jun</td>
-    </tr>
-    <tr>
-      <td>Mercado Pago</td>
-      <td>0.31</td>
-      <td>5.000</td>
-      <td>18/mai</td>
-      <td>12/jun</td>
-    </tr>
-    <tr>
-      <td>Nubank</td>
-      <td>0.46</td>
-      <td>5.000</td>
-      <td>08/jun</td>
-      <td>12/jun</td>
-    </tr>
-    <tr>
-      <td>Santander</td>
-      <td>0.18</td>
-      <td>5.000</td>
-      <td>27/abr</td>
-      <td>12/jun</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+![alt text](graficos/image.png)
 
 **Sentimentos**
-- No sentimento médio geral dos usuários, **Nubank**, **Banco do Brasil**, **Inter** e **Mercado Pago** tem um sentimento positivo, enqunato **Bradesco**, **Caixa**, **Itaú** e **Santander** são neutros. O **C6** é único com sentimento negativo entre as 9 empresas. 
+- No sentimento médio geral dos usuários, **Nubank**, **Banco do Brasil**, **Inter** e **Mercado Pago** tem um sentimento positivo, enquanto **Bradesco**, **Caixa**, **Itaú** e **Santander** são neutros. O **C6** é único com sentimento negativo entre as 9 empresas. 
 - Nos comentários positivos, o top 3 apps com mais comentários positivos são **Nubank**, **Banco do Brasil** e **Inter**.
 - Em contra partida, como esses são os apps com mais comentários positivos, acabam sendo também os que tem menos comentários negativos. Além desses, o **Mercado Pago** também possui poucos comentários negativos.
-- Tratando de comentários negativos, observandos os que mais possuem atualmente são **C6**, **Itaú** e **Bradesco**.
+- Tratando de comentários negativos, observando os que mais possuem atualmente são **C6**, **Itaú** e **Bradesco**.
 
 ![sentimentos_simples_bancos](graficos/sentimentos_simples_bancos.png)
 
@@ -142,9 +65,9 @@ Na tabela abaixo apresenta um resumo geral dos dados. Na coluna de **Sentimento 
 - Foram classificados os seguintes temas para ser observados o sentimento médio: App, Desempenho (do App), Login, Atendimento, Segurança, Cartões, Extrato, PIX e Pagamentos.
 - Após o detalhamento dos temas, app por app, a visão geral dos app foi o tema mais falado.
 - A visão do aplicativo foi bastante distinta, para maioria neutra, para outros poucos negativa ou positiva.
-- Quando negativo a visão geral do app, quase sempre relacionado ao desemepenho e o login do app.
+- Quando negativo a visão geral do app, quase sempre relacionado ao desempenho e o login do app.
 - No Nubank e Mercado Pago, o tema sobre Cartões é visto com positivo. Enquanto para os demais bancos e fintechs é um tema negativo.
-- Temas como Empréstimo, Extrato,e Segurança foram pouco comentados no geral.
+- Temas como Empréstimo, Extrato e Segurança foram pouco comentados no geral.
 
 **App com Temas com Sentimento Positivo**
 
@@ -158,3 +81,12 @@ Na tabela abaixo apresenta um resumo geral dos dados. Na coluna de **Sentimento 
 **App com Temas com Sentimento Negativo**
 
 ![temas_mais_falados_c6](graficos/temas_mais_falados_c6.png)
+
+## **Considerações Finais**
+
+Após todo o processo de aprendizado sobre o assunto, aplicação e análise. A aplicação desses modelos em comentários de aplicativos parecem um bom ponto de partida para realizar um estudo de benchmark, mas sozinhos não trazem tantas informações como esperado. Senti um pouco de falta do conhecimento geral dos aplicativos e processos internos, que apenas pessoas que trabalham internamente teriam para fornecer explicações porque os usuários se expressam de tal maneira, por exemplo:
+- Porque o app tem tantos comentários negativos? Houve uma realease nova com bugs? Mudanças de desing? Subiram preços de serviços? Etc.
+- Porque os usuários gostam tanto de uma funcionalidade? Houve um redesing da jornada? O tempo de resposta ao interagir melhorou? Etc.
+
+Esses conhecimentos auxiliam a "ligar os pontos" para insights mais valiosos. Uma possibilidade de aplicação mais assertiva seja em bases de NPS, FAQs, atendimento ou outras bases mais controladas, ou até mesmo realizar periodicamente essa análise para acompanhar o sentimento contínuo do app na loja. \
+Parece que comentários de lojas de aplicativos tendem a trazer sentimentos mais intensos, especialmente negativos, quando o app está com problemas.
