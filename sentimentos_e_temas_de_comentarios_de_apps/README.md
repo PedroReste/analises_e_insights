@@ -1,4 +1,4 @@
-# **Análise de Sentimento e Classificação de Temas de Comentários de Apps**
+# **Sentimentos e Classificação de Temas de Comentários de Apps**
 **O que você vai encontrar nessa pasta?**
 
 Uma análise que busca extrair insights de comentários públicos de aplicativos originados da Play Store de bancos/fintechs e operadoras de telefonia no Brasil.
